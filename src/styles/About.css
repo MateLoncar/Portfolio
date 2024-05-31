@@ -1,16 +1,26 @@
-
 .section-content {
     padding: 40px;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     margin-top: 40px;
+    align-items: center; 
+    justify-content: space-around; 
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-picture-container {
+    position: relative;
   }
   
   #about h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #1abc9c; 
+    color: #1abc9c;
   }
   
   #about p {
@@ -18,3 +28,39 @@
     line-height: 1.6;
   }
   
+  .profile-picture {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%;
+  }
+  
+  .social-media-icons {
+    position: absolute;
+    bottom: -40px; 
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-media-icon {
+    width: 30px; 
+    height: 30px; 
+    transition: transform 0.3s ease; 
+  }
+  
+  .social-media-icon:hover {
+    transform: scale(1.2); 
+  }
+  
+  .about-text-container {
+    margin-left: 0px; 
+    margin-top: 50px
+  }
+  
+
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column; 
+    }
+  }
