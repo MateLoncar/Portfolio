@@ -1,0 +1,87 @@
+/* src/App.css */
+
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Futuristic background with moving gradient */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  background-size: 400% 400%;
+  animation: gradientBackground 15s ease infinite;
+  color: #fff;
+}
+
+@keyframes gradientBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styling */
+
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+nav ul li.active,
+nav ul li:hover {
+  color: #1abc9c;
+}
+
+section {
+  padding: 80px 20px;
+  margin-top: 60px;
+}
+
+#about,
+#projects,
+#contact {
+  margin-top: 40px;
+}
+
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.language-selector {
+  margin-left: auto;
+}
+
+.section-content {
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}

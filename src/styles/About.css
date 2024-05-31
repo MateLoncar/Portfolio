@@ -1,0 +1,20 @@
+
+.section-content {
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 40px;
+  }
+  
+  #about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #1abc9c; 
+  }
+  
+  #about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  
