@@ -4,14 +4,11 @@
   justify-content: space-between;
   background-color: #14142d;
   color: #fff;
-  padding: 20px 30px;
-  position: fixed;
+  padding: 20px 20px;
   width: calc(100% - 40px);
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 0 auto;
   z-index: 1000;
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s, box-shadow 0.3s;
 }
@@ -97,4 +94,18 @@
 .selected-language:hover {
   background-color: #1abc9c;
   color: #1a1a40;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 10px 8px;
+    width: calc(100% - 30px); 
+  }
+
+  .header-nav ul li {
+    margin-left: 5px; /* Reduce margin for mobile view */
+  }
 }
