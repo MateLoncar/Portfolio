@@ -1,8 +1,21 @@
-
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
+  background-color: #1a1a40;
+  color: #fff;
+  padding: 20px 30px;
+  text-align: center;
+  width: calc(100% - 40px);
+  margin: 20px auto 0;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+footer:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+footer p {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 16px;
+}

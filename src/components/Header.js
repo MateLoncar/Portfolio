@@ -2,13 +2,14 @@ import React from 'react';
 import '../styles/Header.css';
 import { useLanguage } from './LanguageContext';
 import LanguageSelector from './LanguageSelector';
+import MLLogo from '../assets/img/ML_logo.png';
 
 const Header = () => {
     const { translate } = useLanguage();
   
     return (
       <header className="header-container">
-        <h1 className="header-title">{translate('name')}</h1>
+        <img src={MLLogo} alt="ML Logo" className="header-logo" />
         <nav className="header-nav">
           <ul>
             <li><a href="#about">{translate('about')}</a></li>
