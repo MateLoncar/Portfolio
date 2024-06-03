@@ -1,6 +1,6 @@
 .section-content {
     padding: 40px;
-    background: rgba(0, 0, 0, 0.5);
+    background: #1a1a40;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     margin-top: 40px;
@@ -55,12 +55,15 @@
   
   .about-text-container {
     margin-left: 0px; 
-    margin-top: 50px
   }
   
 
   @media (max-width: 768px) {
     .about-container {
       flex-direction: column; 
+    }
+
+    .about-text-container {
+      margin-top: 50px
     }
   }
