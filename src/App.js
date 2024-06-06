@@ -51,7 +51,7 @@ function App() {
                 <HackerNews onClose={() => setShowHackerNews(false)} />
             ) : (
                 <button className="show-hacker-news-button" onClick={() => setShowHackerNews(true)}>
-                    Show Hacker News
+                    Hacker News
                 </button>
             )}
 
