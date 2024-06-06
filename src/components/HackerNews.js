@@ -5,7 +5,7 @@ import '../styles/HackerNews.css';
 
 const HackerNews = ({ onClose }) => {
     const [articles, setArticles] = useState([]);
-    const [loading, setLoading] = useState(true); // Add loading state
+    const [loading, setLoading] = useState(true); 
     const [currentNewsIndex, setCurrentNewsIndex] = useState(0);
 
     useEffect(() => {
@@ -26,7 +26,7 @@ const HackerNews = ({ onClose }) => {
             } catch (error) {
                 console.error('Error fetching data', error);
             } finally {
-                setLoading(false); // Set loading to false once data is fetched
+                setLoading(false);
             }
         };
         fetchData();
