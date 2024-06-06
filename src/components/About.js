@@ -38,7 +38,7 @@ const About = () => {
         </div>
         <div className="about-text-container">
           <h2>{translate('aboutMe')}</h2>
-          <p>{translate('aboutText')}</p>
+          <p dangerouslySetInnerHTML={{ __html: translate('aboutText') }}></p>
         </div>
       </div>
     </section>
