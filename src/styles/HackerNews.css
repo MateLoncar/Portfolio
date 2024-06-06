@@ -1,0 +1,109 @@
+.hacker-news-container {
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(87, 66, 66, 0.5);
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.hacker-news-header {
+   font-size: 3pm;
+   margin-top: 0%;
+}
+
+.hacker-news-ticker {
+    margin-top: 20px;    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.hacker-news-item {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s;
+}
+
+.hacker-news-item.active {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.hacker-news-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hacker-news-item:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.hacker-news-item:hover a {
+    text-decoration: underline;
+}
+
+.hacker-news-item a:hover {
+    color: #1abc9c;
+}
+
+.show-hacker-news-button {
+    padding: 10px 20px;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.show-hacker-news-button:hover {
+    background-color: #16a085;
+    transform: translateY(-2px);
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.close-button:hover {
+    transform: rotate(90deg);
+}
+
+.hacker-news-container-enter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.hacker-news-container-enter-active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.hacker-news-container-exit {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.hacker-news-container-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+}
