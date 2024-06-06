@@ -107,3 +107,10 @@
     opacity: 0;
     transform: scale(0.9);
 }
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
